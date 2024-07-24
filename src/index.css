@@ -65,7 +65,7 @@
   }
   
   .hover-underline-animation:hover::after {
-    @apply scale-x-125;
+    @apply scale-x-105;
   }
 
 }
