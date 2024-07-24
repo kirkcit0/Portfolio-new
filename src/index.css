@@ -27,4 +27,45 @@
     mx-2;
   }
 
+  .navbar-icon {
+    @apply relative flex items-center justify-center 
+    h-12 w-12 mt-2 mb-2 mx-auto 
+  text-yellow-400 hover:text-black
+    hover:rounded-xl rounded-3xl
+    transition-all duration-100 ease-linear
+    cursor-pointer;
+  }
+
+  .navbar-text {
+    @apply text-yellow-400 text-2xl not-italic content-center mx-auto font-thin
+    hover:font-bold hover:text-gray-800 z-10
+    transition-all;
+  }
+
+  .navbar-hr {
+    @apply bg-gray-800 
+    border border-gray-800 rounded-full 
+    mx-2;
+  }
+  
+  .navbar-tooltip{
+    @apply relative w-auto min-w-max align-middle ml-2
+    text-gray-800
+    text-xs font-bold 
+    transition-all duration-100 scale-0 origin-center;
+  }
+
+  .hover-underline-animation {
+    @apply relative cursor-pointer;
+  }
+  
+  .hover-underline-animation::after {
+    @apply bg-yellow-400 content-[''] absolute w-full scale-x-0 h-10 top-3 left-0 origin-center transition-all ease-in-out;
+    z-index: -1;
+  }
+  
+  .hover-underline-animation:hover::after {
+    @apply scale-x-125;
+  }
+
 }
